@@ -13,7 +13,7 @@ It was built by mounting an Arduino microcontroller with a gyroscope sensor to a
 We were proud and honored for being awarded "Gullspiren", an award given by the school jury to the best student work in each field at graduation.
 
 ## Demo
-The real experience lies with the interaction through the glove, but you can [try out the 3D world](http://htmlpreview.github.io/einarlove/wings-of-glove/blob/master/The-3D-world/index.html) by using your keyboard arrows.
+The real experience lies with the interaction through the glove, but you can [try out the 3D world](http://einarlove.com/view/wingsofglove/) by using your keyboard arrows.
 
 ## Credits
 **Einar Löve**: Concept, game design and WebGL programming.  
