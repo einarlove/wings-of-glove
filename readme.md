@@ -3,7 +3,7 @@
 # Wings of Glove
 An interactive installation for a school project in human-computer interaction with focus on using input/output beyond what is typical in computing (keyboards, mice, etc…).
 
-[![IMAGE ALT TEXT HERE](http://github.com/einarlove/wings-of-glove/raw/master/readme-files/link-to-video.jpg?raw=true)](http://github.com/einarlove/wings-of-glove/raw/master/readme-files/wings-of-glove-demo.mov?raw=true)
+[![A video demo of the 3D world](http://github.com/einarlove/wings-of-glove/raw/master/readme-files/link-to-video.jpg?raw=true)](http://f.cl.ly/items/2r2y0c1Y1E1U3m3d3N2Q/demo-of-wings-of-glove.webmhd.webm)
 
 ## Concept
 The concept for the installation was to relive the experience we had as a child when we ran around and used our arm to imitate a plane or a bird flying.
@@ -18,6 +18,8 @@ The real experience lies with the interaction through the glove, but you can [tr
 ## Credits
 **Einar Löve**: Concept, game design and WebGL programming.  
 **Torbjørn Lunde**: Concept, hardware design and Arduino programming.
+
+The 3D assets are borrowed from [3 Dream of Black](http://www.ro.me), an interactive video by Chris Milk.
 
 ==========
 ![Image of the gardening glove](http://github.com/einarlove/wings-of-glove/raw/master/readme-files/glove.jpg?raw=true)
