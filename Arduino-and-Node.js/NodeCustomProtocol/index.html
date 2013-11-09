@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+	var socket, indicator, ledOn, ledOff, button, callibrate;
+	document.addEventListener('DOMContentLoaded', function() {
+		
+		indicator = document.querySelector('.indicator');
+		button = document.querySelector(".button");
+		led = document.querySelector(".led");
+		callibrate = document.querySelector(".callibrate");
+		
+		socket = io.connect('http://localhost:3000');
+		socket.on('toGame', function (data) {
+			var x = data.x + 100,
+				y = (data.y || data.z) + 100;
+			indicator.style.top = x + "px";
+			indicator.style.left = y + "px";
+		});
+		
+		callibrate.addEventListener("click", function(e) {
+			socket.emit("toServer", {callibrate:true});
+		});
+		
+	});
+</script>
+
+<style>
+	body {
+		font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	}
+	
+	.container {
+		width: 200px;
+		height: 200px;
+		position: relative;
+		border: 2px solid black;
+	}
+
+	.indicator {
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		left: 100px;
+		margin-left: -10px;
+		top: 100px;
+		margin-top: -10px;
+		bottom: 0;
+		background: black;
+		border-radius: 10px;
+	}
+	
+	.button.down {
+		font-weight: bold;
+	}
+	
+</style>
+
+<h1>Glove comm.</h1>
+
+<h2>Accelometer or gyroscope</h2>
+<div class='container'>
+	<div class='indicator'></div>
+</div>
+
+<button class="callibrate">Callibrate</button>
